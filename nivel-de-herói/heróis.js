@@ -1,6 +1,6 @@
 
 let nomeHerói = 'lanterna verde';
-let xp = 11000 ;
+let xp = 6000 ;
 
 
 if(xp <= 1000){
