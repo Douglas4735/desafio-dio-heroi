@@ -10,4 +10,18 @@ let invoice = {
         2: ["ouro" , 100]
     }
 }
-console.log(invoice);
+generateInvoice(invoice);
+
+function generateInvoice(invoice){
+    console.log(`O comprador é ${invoice.name}`)
+    console.log(`e tem ${invoice.age} anos de idade`)
+    console.log(`------------------------------`)
+
+    //console.log(`E ele tem varias medalhas que são ${invoice.medalhas[2]}`)
+    
+    for(let index in invoice.medalhas){
+        let [productName, productPrice] = invoice.medalhas[index]
+        console.log(`${productName}: R$ ${productPrice}`)
+    }
+    
+}
